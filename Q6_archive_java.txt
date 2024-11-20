@@ -1,0 +1,14 @@
+public class Q6 {
+
+    public static void main(String[] args) {
+
+        for (int i = Integer.parseInt(args[0]); i > 0 ; i--) {
+            for (int j = i; j > 0; j--) {
+                System.out.print("x");
+            }
+            System.out.println();
+        }
+    }
+}Mohamad MARROUCHE
+20-11-2024-140010
+Le fichier Q6.java contient 11 lignes et 274 caractères.
