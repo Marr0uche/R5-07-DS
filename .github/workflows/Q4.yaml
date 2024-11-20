@@ -30,10 +30,10 @@ jobs:
         run: |
           cp Q4.java Q4_archive_java.txt
       - name: écrire dans fichier
-        run: echo "\nMohamad MARROUCHE" >> Q4_archive_java.txt
+        run: echo "Mohamad MARROUCHE" >> Q4_archive_java.txt
 
       - name: écrire la date
-        run: date +"%d-%m-%Y" >> Q4_archive_README.md
+        run: date +"%d-%m-%Y" >> Q4_archive_java.txt
 
       - name: AS commmit et push
         run: |
