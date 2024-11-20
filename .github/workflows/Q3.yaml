@@ -36,6 +36,7 @@ jobs:
         run: |
          git config --global user.name Marr0uche
          git config --global user.email ramboxxrhino2004@gmail.com
+         git pull
          git add -A
          git status
          git commit -m "exécution de maven"
