@@ -33,7 +33,7 @@ jobs:
         run: echo "Mohamad MARROUCHE" >> Q6_archive_java.txt
 
       - name: écrire la date
-        run: date +"%d-%m-%Y-%H%M%S">> Q6_archive_java.txt
+        run: date +"%d-%m-%Y-%H%M%S" >> Q6_archive_java.txt
 
       - name: écire la taille de caractères et de lignes du fichier 
         run: |
@@ -53,5 +53,5 @@ jobs:
          git pull
          git add -A
          git status
-         git commit -m "exécution de maven"
+         git commit -m "Q6.yaml"
          git push
