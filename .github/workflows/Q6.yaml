@@ -40,7 +40,11 @@ jobs:
           lignes=$(wc -l < Q6.java)
           chars=$(wc -m < Q6.java)
           echo "Le fichier Q6.java contient $lignes lignes et $chars caractères." >> Q6_archive_java.txt
-      
+
+      - name: differences entre deux fichiers 
+        run: | 
+          diff Q6_archive_date.txt Q6_archive_date.txt > Q6_différences.txt
+
           
       - name: AS commmit et push
         run: |
