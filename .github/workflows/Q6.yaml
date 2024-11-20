@@ -42,6 +42,7 @@ jobs:
           echo "Le fichier Q6.java contient $lignes lignes et $chars caractères." >> Q6_archive_java.txt
 
       - name: differences entre deux fichiers 
+        run: | 
           diff Q6_archive_date.txt Q6_archive_date.txt > Q6_différences.txt
 
           
