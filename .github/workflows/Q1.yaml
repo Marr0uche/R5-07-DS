@@ -25,14 +25,15 @@ jobs:
       # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
       - uses: actions/checkout@v4
 
+      - name: Creer Q1_archive_README.md
+        run: |
+          cp README.md Q1_archive_README.md
+          
       - name: S'identifier
         run: |
           git config --global user.email ramboxxrhino2004@gmail.com
           git config --global user.name Marr0uche
 
-      - name: Creer Q1_archive_README.md
-        run: |
-          cp README.md Q1_archive_README.md
 
       - name: Commit changes
         run: |
